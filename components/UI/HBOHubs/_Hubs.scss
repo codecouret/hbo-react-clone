@@ -1,0 +1,39 @@
+.hubs{
+    padding: 20px 0 20px 50px;
+    &__title{
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    &__thumbnails{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        min-width: 100%;
+        width: calc(100vw - 70px);
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    &__btns{
+        display: flex;
+        flex-direction: column;
+    }
+    &__btn-row{
+        display: flex;
+        button{
+            margin: 20px 50px;
+            background-color: black;
+            width: 170px;
+            height: 80px;
+            border-radius: 50px;
+            border: solid 1px #fff;
+            img{
+                width: 40%;
+                height: auto;
+            }
+        }
+    }
+}
